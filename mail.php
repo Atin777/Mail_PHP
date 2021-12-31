@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
       $body = mysqli_real_escape_string($conn, $_POST['body']);
       
       $headers = "From: info@anstechnologies.xyz" . "\r\n" . "CC: somebodyelse@example.com";
-      $sent = mail($to,$subject,$txt,$headers);
+      $sent = mail($receiver,$subject,$body,$headers);
       
       if($sent){
         echo 'Mail sent';
