@@ -24,4 +24,10 @@ if(isset($_POST['submit'])){
       }else{
         echo 'Failed to send the mail';
       }
+      
+    }
+    
+  }
+  
+}
 ?>
